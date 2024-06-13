@@ -10,11 +10,11 @@ import { Component } from '@angular/core';
         <a routerLink="/home">Summit Bank</a>
       </div>
       <ul class="nav-links">
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/about">Features</a></li>
+        <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+        <li><a routerLink="/about"  routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
         <li><a routerLink="/contact">Community</a></li>
         <li><a routerLink="/contact">Blog</a></li>
-        <li><a routerLink="/contact" class="register"><span style="color: white;">Register Now</span></a></li>
+        <li><a routerLink="/contact" class="register"><span style="color: white;">Register Now &#8594;</span></a></li>
       </ul>
       <div class="menu-toggle" (click)="toggleMenu()">
         &#9776;
@@ -32,12 +32,12 @@ import { Component } from '@angular/core';
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-      z-index: 1000;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     }
 
     .logo {
       display: flex;
+      color: #424242;
       align-items: center;
       gap: 10px;
       font-size: 1.5em;
@@ -69,7 +69,7 @@ import { Component } from '@angular/core';
       padding : 0 20px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
       .nav-links {
         display: none;
         position: absolute;
