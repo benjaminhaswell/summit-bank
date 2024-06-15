@@ -24,6 +24,7 @@ import { Component } from '@angular/core';
   styles: [`
     nav {
       position: fixed;
+      background-color: white;
       top: 0;
       left: 0;
       width: 100%;
@@ -32,7 +33,7 @@ import { Component } from '@angular/core';
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     }
 
     .logo {
@@ -43,6 +44,7 @@ import { Component } from '@angular/core';
       font-size: 1.5em;
       padding : 0 20px;
       font-weight: bold;
+      white-space: nowrap;
     }
 
     .nav-links {
@@ -75,7 +77,8 @@ import { Component } from '@angular/core';
         position: absolute;
         top: 65px;
         left: 0;
-        width: 100%;
+        width: 90vw;
+        padding-bottom: 20px;
         background-color: white;
         flex-direction: column;
         align-items: center;
@@ -92,12 +95,6 @@ import { Component } from '@angular/core';
       .menu-toggle {
         display: block;
       }
-    }
-
-    .register {
-      padding: 15px;
-      border-radius: 5px;
-      background-color: #0043C6;
     }
   `]
 })

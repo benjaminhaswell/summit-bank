@@ -1,8 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-// Define a mixin for Inter font
 
 body {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #424242;
+}
+
+.register {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #0043C6;
+    white-space: nowrap;
+
+    ::-moz-selection { /* Code for Firefox */
+        background: white;
+        color: #424242;
+    }
+      
+    ::selection {
+    background: white;
+    color: #424242;
+    }
 }
